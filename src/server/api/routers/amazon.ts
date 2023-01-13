@@ -2,14 +2,16 @@ import puppeteer from "puppeteer";
 import { z } from "zod";
 import { createTRPCRouter, publicProcedure } from "../trpc";
 
+console.log("launching browser...");
+
 export const amazonRouter = createTRPCRouter({
-  search: publicProcedure.input(z.string()).query(async ({ input }) => {
+  search: publicProcedure.input(z.string()).mutation(async ({ input }) => {
     try {
-      console.log("launching browser...");
       const browser = await puppeteer.launch({
         // headless: false,
       });
       const page = await browser.newPage();
+
       console.log("navigating to amazon...");
       await page.goto(`https://www.amazon.com/s?k=${input}`, {
         waitUntil: "networkidle0",
