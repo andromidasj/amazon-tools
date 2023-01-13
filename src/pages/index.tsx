@@ -2,8 +2,11 @@ import { Container, Tabs, Title } from "@mantine/core";
 import { type NextPage } from "next";
 import Head from "next/head";
 import Search from "../components/Search";
+import { api } from "../utils/api";
 
 const Home: NextPage = () => {
+  api.amazon.init.useQuery();
+
   return (
     <>
       <Head>
