@@ -4,7 +4,7 @@ import Head from "next/head";
 import { api } from "../utils/api";
 
 const Home: NextPage = () => {
-  const hello = api.amazon.search.useQuery();
+  const hello = api.amazon.search.useQuery("tv");
   hello && console.log("🚀 ~ hello", hello.data);
 
   return (
