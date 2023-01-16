@@ -82,7 +82,7 @@ export default function Search() {
             <tbody>
               {data.results.map((item) => (
                 <tr key={item.asin}>
-                  <td>{item["#"]}</td>
+                  {/* <td>{item["#"]}</td> */}
                   <td>{item.asin}</td>
                   <td>{item.title}</td>
                   <td>{item.price}</td>

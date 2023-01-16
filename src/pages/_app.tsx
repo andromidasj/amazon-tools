@@ -10,10 +10,10 @@ const MyApp: AppType = ({ Component, pageProps }) => {
     <MantineProvider
       withGlobalStyles
       withNormalizeCSS
-      // theme={{
-      //   /** Put your mantine theme override here */
-      //   colorScheme: "light",
-      // }}
+      theme={{
+        /** Put your mantine theme override here */
+        colorScheme: "dark",
+      }}
     >
       <Component {...pageProps} />
     </MantineProvider>
