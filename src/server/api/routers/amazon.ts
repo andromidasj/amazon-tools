@@ -68,8 +68,6 @@ export const amazonRouter = createTRPCRouter({
 
       const pageResults = await Promise.allSettled(promiseArr);
 
-      console.log(pageResults);
-
       let results: Result[] = [];
 
       for (const pageResult of pageResults) {
