@@ -1,3 +1,7 @@
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import {
   Button,
   Container,
@@ -58,7 +62,7 @@ export default function Search() {
       {!!data && (
         <Stack>
           <Group position="apart">
-            <Title order={3}>Search Results</Title>
+            <Title order={3}>Results: {data.results.length}</Title>
             <Button
               color={clipboard.copied ? "teal" : "blue"}
               onClick={() => {
@@ -72,7 +76,6 @@ export default function Search() {
           <Table>
             <thead>
               <tr>
-                <th>#</th>
                 <th>ASIN</th>
                 <th>Title</th>
                 <th>Price</th>
@@ -82,7 +85,6 @@ export default function Search() {
             <tbody>
               {data.results.map((item) => (
                 <tr key={item.asin}>
-                  {/* <td>{item["#"]}</td> */}
                   <td>{item.asin}</td>
                   <td>{item.title}</td>
                   <td>{item.price}</td>
