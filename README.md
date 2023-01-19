@@ -1,28 +1,7 @@
-# Create T3 App
+# Amazon Tools
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+![SCR-20230119-g10](https://user-images.githubusercontent.com/66661368/213518065-56f9a732-dc75-44cd-8641-0cfe8a0ed3c9.png)
 
-## What's next? How do I make an app with this?
+This was my attempt at making a tool for a friend to make it easy to get a list of ASINs from an Amazon search results page. The current implementation is slow, and uses [JSDOM](https://github.com/jsdom/jsdom) for webscraping. I could look into efficiency improvements in the future if I decide to keep developing in the future.
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
-
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
-
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
-
-## Learn More
-
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
-
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
-
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
-
-## How do I deploy this?
-
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+Scaffolding done with [Create T3 App](https://create.t3.gg/).
